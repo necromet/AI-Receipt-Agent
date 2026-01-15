@@ -1,9 +1,9 @@
 <div align="center">
 <img src="banner/Banner BG.png" alt="AIUI Banner" width="100%" />
 
-# AI User Interface for future purposes
+# AI
 
-*AI chat application powered by Google's Gemini API*
+*AI receipt parser*
 
 [![Electron](https://img.shields.io/badge/Electron-33.2.0-47848F?style=flat&logo=electron)](https://www.electronjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.0-61DAFB?style=flat&logo=react)](https://react.dev/)
