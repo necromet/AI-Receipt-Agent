@@ -31,3 +31,34 @@ def parse_receipt(text):
     else:
         print("No valid response from OpenAI.")
         return None
+    
+def group_by_lines(detections, y_tolerance=10):
+    if not detections:
+        return []
+    
+    # Sort by y-coordinate first
+    sorted_detections = sorted(detections, key=lambda x: x[0][0][1])
+    
+    lines = []
+    current_line = [sorted_detections[0]]
+    
+    for detection in sorted_detections[1:]:
+        box, text, confidence = detection
+        current_y = box[0][1]  # top-left y coordinate
+        last_y = current_line[-1][0][0][1]  # y coordinate of last item in current line
+        
+        # If y-coordinates are within tolerance, add to current line
+        if abs(current_y - last_y) <= y_tolerance:
+            current_line.append(detection)
+        else:
+            # Sort current line by x-coordinate (left to right)
+            current_line.sort(key=lambda x: x[0][0][0])
+            lines.append(current_line)
+            current_line = [detection]
+    
+    # Don't forget the last line
+    if current_line:
+        current_line.sort(key=lambda x: x[0][0][0])
+        lines.append(current_line)
+    
+    return lines
