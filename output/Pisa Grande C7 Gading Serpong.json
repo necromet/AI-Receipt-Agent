@@ -1,0 +1,43 @@
+{
+    "items": [
+        {
+            "name": "Crispy Dory",
+            "quantity": 1,
+            "unit_price": 55000,
+            "total_price": 55000
+        },
+        {
+            "name": "Yakiniku Teishoku",
+            "quantity": 1,
+            "unit_price": 65000,
+            "total_price": 65000
+        },
+        {
+            "name": "Chicken Nanban",
+            "quantity": 1,
+            "unit_price": 54000,
+            "total_price": 54000
+        },
+        {
+            "name": "Chicken Katsu",
+            "quantity": 1,
+            "unit_price": 49000,
+            "total_price": 49000
+        },
+        {
+            "name": "Rice",
+            "quantity": 1,
+            "unit_price": 10000,
+            "total_price": 10000
+        }
+    ],
+    "subtotal": 233000,
+    "tax": null,
+    "ppn": null,
+    "service_charge": 11650,
+    "other_fees": 24465,
+    "total": 269115,
+    "date": "2025-07-05",
+    "merchant": "Pisa Grande C7 Gading Serpong",
+    "address": null
+}

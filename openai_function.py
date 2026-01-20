@@ -6,7 +6,7 @@ import time
 from datetime import datetime
 from dotenv import load_dotenv
 
-model_name = "gpt-4.1-nano-2025-04-14"
+model_name = "gpt-4o-mini"
 token_limit = 10000
 
 def configure_openai():

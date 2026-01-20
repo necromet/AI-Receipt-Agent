@@ -1,0 +1,7 @@
+paddleocr[all]
+paddlepaddle==3.2.0
+pandas
+numpy
+python-dotenv
+matplotlib
+openai
